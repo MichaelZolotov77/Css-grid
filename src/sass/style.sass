@@ -3,23 +3,21 @@
     width: 1000px
     margin: 0 auto
     display: grid
-    grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: repeat(8, 1fr)
+    grid-template-rows: 100px 200px 400px 100px
+    grid-template-columns: repeat(3, 1fr) 200px
     gap: 20px
-.item
-    padding: 20px
-    font-size: 30px
-    font-family: sans-serif
-    color: white
-    background-color: blue
-    &__header
-        grid-column: 1 / -1
-    &__box-1, &__box-2, &__box-3
-        grid-row: span 2
-    &__sidebar
-        grid-row: span 6
-    &__main
-        grid-area: 4 / 1 / 8 / 4
-    &__footer
-        grid-column: 1 / -1
-
+    & > *
+        background-color: blue
+        padding: 20px
+        font-size: 20px
+        font-family: sans-serif
+        color: white
+.header
+    grid-column: 1 / -1
+.sidebar
+    grid-column: 4 / -1
+    grid-row: 2 / 4
+.main
+    grid-column: 1 / span 3
+.footer
+    grid-column: 1 / -1
