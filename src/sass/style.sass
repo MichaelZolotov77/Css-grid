@@ -3,27 +3,24 @@
     width: 1000px
     margin: 0 auto
     display: grid
-    grid-template-rows: 100px 200px 400px 100px
-    grid-template-columns: repeat(3, 1fr) 200px
+    grid-template-rows: repeat(2, 150px)
+    grid-template-columns: repeat(2, 1fr)
     gap: 20px
-    grid-template-areas: "head head head ." "box-1 box-2 box-3 side" "main main main side" ". footer footer footer"
-    & > *
-        background-color: blue
-        padding: 20px
-        font-size: 20px
-        font-family: sans-serif
-        color: white
-.header
-    grid-area: head
-.box-1
-    grid-area: box-1
-.box-2
-    grid-area: box-2
-.box-3
-    grid-area: box-3
-.sidebar
-    grid-area: side
-.main
-    grid-area: main
-.footer
-    grid-area: footer
+
+.item
+    padding: 20px
+    font-size: 30px
+    font-family: sans-serif
+    color: white
+    background-color: blue
+    &-1
+
+    &-2
+
+    &-3
+
+    &-4
+
+    &-5
+
+    &-6
